@@ -16,7 +16,7 @@ public class ObjectSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(time > spawnCoolTime)
+        if(spawnObject != null && time > spawnCoolTime)
         {
             Instantiate(spawnObject);
             time = 0;
